@@ -1,0 +1,112 @@
+.animals {
+    max-height: 45vh;
+    overflow-y: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.053);
+    border-top: 1px solid rgba(0, 0, 0, 0.053);
+    margin-top: 1rem;
+}
+
+.animals > div {
+    margin: 2rem 0;
+}
+
+
+.alignRight {
+    padding: 1rem 0;
+}
+
+.animals label {
+    border-radius: 4px;
+}
+
+.filtersContainer button {
+   font-size: 1rem;
+   margin: 1rem auto;
+   display: block;
+}
+
+.filtersContainer div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content repeat(4, min-content);
+}
+
+.filtersContainer div h4 {
+    grid-column: 1 / 4;
+}
+
+.filtersContainer div label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2rem;
+    height: 17px;
+}
+
+.filtersContainer div div div {
+    width: 100%;
+    display: block;
+    padding-right: 1rem;
+    height: 17px;
+}
+
+.filtersContainer div label input {
+    margin-right: .5rem;
+    width: 1.3rem;
+}
+
+.sortButton {
+    font: inherit;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: .2rem .5rem;
+    background: rgb(48, 48, 48);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    margin-right: .5rem;
+}
+
+.sortButton svg {
+    margin-right: .4rem;
+}
+
+.actions {
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0;
+}
+
+.actions button:first-of-type {
+    margin-right: 2rem;
+}
+
+@media all and (max-width: 600px) {
+    .filtersContainer div label {
+        font-size: 1rem;
+        width: fit-content;
+    }
+
+    .filtersContainer div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filtersContainer div h4 {
+        grid-column: 1 / 3;
+    }
+
+    .filtersContainer div label input {
+        width: 1rem;
+    }
+    .sortButton {
+    font-size: .8rem;
+    padding: .1rem .4rem;
+    margin-right: .5rem;
+}
+}
+
+.filterContainer {
+    grid-column: 1 / -1;
+}

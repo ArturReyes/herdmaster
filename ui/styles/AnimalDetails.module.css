@@ -1,0 +1,69 @@
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 3rem;
+    grid-auto-rows: minmax(50px, auto);
+    column-gap: 2rem;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+@media all and (max-width: 500px) {
+    .details {
+        row-gap: 1rem;
+    column-gap: 1rem;
+    font-size: 1rem;
+    grid-template-columns:1fr 1fr 1fr;
+    }
+}
+
+.details span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.details div:last-of-type {
+    grid-column: 1 / 4;
+}
+
+
+.specialField {
+    display: flex;
+    align-items: center;
+}
+
+.details span a {
+    margin-left: 1rem;
+    font-weight: bold;
+    color: inherit;
+    background: rgb(255, 226, 80);
+    border-radius: 4px;
+    display: block;
+    width: max-content;
+    padding: .3rem .7rem;
+}
+
+.weightLogContainer {
+    max-height: 30rem;
+    min-height: 15rem;
+    overflow-y: scroll;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.053);
+    border-top: 1px solid rgba(0, 0, 0, 0.053);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 80px;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.weightLogContainer div:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.053);
+}
+
+.weightLogContainer div {
+    padding: 1rem;
+}
+
+.action {
+    margin: 1rem 0;
+}

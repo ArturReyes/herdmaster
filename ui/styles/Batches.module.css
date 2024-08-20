@@ -1,0 +1,44 @@
+.batch {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr max-content;
+    border-radius: 4px;
+    margin: 2rem 0;
+    padding: .5rem 2rem;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.batchSkeleton {
+    margin: 2rem 0;
+    height: 5.3rem;
+}
+
+@media all and (max-width: 400px) {
+    .batch {
+       
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        
+    }
+}
+
+.batch div:not(:first-of-type) {
+    text-align: center;
+}
+
+.batch div:last-of-type {
+    justify-self: end;
+}
+
+.batch:hover {
+    background: rgba(0, 0, 0, 0.171);
+    border-color: white;
+}
+
+.batch h3 {
+    font-weight: 400;
+    font-size: inherit;
+    color: rgba(0, 0, 0, 0.334);
+    text-transform: uppercase;
+}
