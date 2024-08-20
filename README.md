@@ -108,4 +108,4 @@ Start the server
 
 ## Support
 
-For support, please email pedroenriquedev@gmail.com.
+For support, please email arturoreyesolorzano@gmail.com.
