@@ -17,7 +17,7 @@ https://livestockapp.vercel.app/
 
 ## About
 
-My dad is a farmer back in Brazil and he manages his inventory with pen and paper, making it difficult to keep track of everything across numerous sheets. To assist him (and myself), I created an app that enables us to record cattle growth, health, purchases, sales, and even estimate profits.
+I created an app that enables us to record cattle growth, health, purchases, sales, and even estimate profits.
 
 ## Features
 
